@@ -13,7 +13,6 @@ function App() {
     const [closedList, setClosedList] = useState([]);
 
     const getData = () => {
-        console.log('Getting Data');
         let data = window.localStorage.getItem('Todo_data');
         if (!data) {
             setActiveList([]);
@@ -32,7 +31,7 @@ function App() {
         const target = tasks.find(
             (task) => task.title === title && task.date === date
         );
-        console.log(target);
+
         target.isActive = !target.isActive;
 
         saveTasks(tasks);

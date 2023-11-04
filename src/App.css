@@ -1,0 +1,23 @@
+main {
+    width: min(1200px, 80%);
+    margin-inline: auto;
+    padding: 10vh 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav > div {
+  display: flex;
+  gap: 0.5rem;
+}
